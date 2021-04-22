@@ -1,0 +1,368 @@
+<html>
+<head>
+	<!-- Reqired meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css">
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main-content">
+		<header class="site-header ">
+			<div class="container">
+				<div class="row">
+					<div class="left-logo col-md-6">
+						<h6 class="logo"><img src="images/logos/Declare-Certo-logo.png" alt=""></h6>
+					</div>
+					<div class="right-profile col-md-6">
+							<a href="Sincronzar_conta_B3.html"><p class="btn green-bg">Sincronzar conta B3</p></a>
+						<p class="btn menu-item2"> <i class="fas fa-file-download"></i> Relatório para a declaração anual</p>
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="images/logos/user.png" width="40" height="40" class="rounded-circle">
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 56px, 0px); top: 0px; left: auto; right: 0; will-change: transform;">
+								<a class="dropdown-item" href="#"><i class="fas fa-home"></i> Início</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Ajustes</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-user-alt"></i> Perfil</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair</a>
+							</div>
+							</li>   
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container table-section">
+				<div class="row">
+					<div class="col-md-12">
+						<a href="Lançamento_de_posição_nicial.html"><button class="tbl-btn btn green-bg">Deseja lançar uma posição inicial? <i class="fas fa-arrow-right"></i></button></a>
+					</div>
+					<div class="right col-md-6">
+						<table border=0;>
+							<tr class="cus-border-bottom">
+								<td colspan=3 class="padding-ten">
+									<div class="text">
+										<span><i class="fad fa-file-alt"></i> Relatório de Imposto</span>
+										<span>
+										<!--	<button class="btn button"> Ver Status</button>--> 
+											<a href="Histórico.html"><button class="btn button"> Ver Histórico</button></a>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr class="align-center green-text">
+								<th style="width: 20%;" class="cus-border-right w-20">Mês</th>
+								<th style="width: 30%;" class="cus-border-right w-30">Valor</th>
+								<th class="w-50">Status</th>
+							</tr>
+							<tr class="align-center green-text bg-light-green">
+								<td class="cus-border-right">Março</td>
+								<td class="cus-border-right text-black">R$ 2.000</td>
+								<td class="text-black">Pago<i class="fad fa-check-circle"></td>
+							</tr>
+							<tr class="align-center green-text">
+								<td class="cus-border-right">Abril</td>
+								<td class="cus-border-right text-black">R$ 2.000</td>
+								<td class="text-black">Pago<i class="fad fa-check-circle"></td>
+							</tr>
+							  
+							<tr class="align-center green-text bg-light-green">
+								<td class="cus-border-right">Maio</td>
+								<td class="cus-border-right text-black">R$ 2.000</td>
+								<td class="text-black">Pago<i class="fad fa-check-circle"> 
+								</td>
+							</tr>
+							<tr>
+								<td class="cus-border-right"></td>
+								<td class="cus-border-right text-black"></td>
+								<td class="text-black"></td>
+							</tr>
+							<tr>
+								<td class="cus-border-right"></td>
+								<td class="cus-border-right text-black"></td>
+								<td class="text-black"></td>
+							</tr>
+							<tr>
+								<td class="cus-border-right"></td>
+								<td class="cus-border-right text-black"></td>
+								<td class="text-black"></td>
+							</tr>
+							<tr>
+								<td class="cus-border-right"></td>
+								<td class="cus-border-right text-black"></td>
+								<td class="text-black"></td>
+							</tr>
+							<tr>
+								<td class="cus-border-right"></td>
+								<td class="cus-border-right text-black"></td>
+								<td class="text-black"></td>
+							</tr>
+							<tr>
+								<td class="cus-border-right"></td>
+								<td class="cus-border-right text-black"></td>
+								<td class="text-black"></td>
+							</tr>
+							<tr>
+								<td class="cus-border-right"></td>
+								<td class="cus-border-right text-black"></td>
+								<td class="text-black"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="left col-md-6">
+						<div class="border-text">
+							<p><i class="fad fa-file-upload"></i>Importar notas e gerar DARF</p>
+							<button class="btn menu-left import-pdf">Importar Arquivo</button>
+							<input type="file" id="import-file" style="display: none;" />
+						</div>
+						<div class="custom-confirme" style="display: none;" >
+							<button class="btn menu-left"  data-toggle="modal" data-target="#myModal">Confirmar dados do arquivo</button>
+							<p>*Confirme os dados do arquivo para gerar informações na tabela de cálculo</p>
+						</div>
+						<button class="btn disabled Importar-Arquivo" style="display: none;" data-toggle="modal" data-target="#myModal-new" disabled>Importar Arquivo</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Você confirma que essas foram as informações da nota de corretagem?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-4">
+                  <P>Resumo dos negócios</P>  
+                 <div class="form-group">
+                  <label for="operações">Valor das operações</label>
+                  <input type="text" class="form-control" id="operações">
+                </div>
+                 <div class="form-group">
+                    <label for="DayTrade">Day Trade</label>
+                    <input type="text" class="form-control" id="totalcblc">
+                 </div>
+                 <div class="form-group">
+                    <label for="Número">Número</label>
+                    <input type="text" class="form-control" id="total">
+                 </div>
+            </div>
+            <div class="col-sm-4">
+               <P>Resumo financeiro</P>  
+               <div class="form-group">
+                <label for="totalcblc">Total CBLC</label>
+                <input type="text" class="form-control" id="DayTrade">
+              </div>
+              <div class="form-group">
+                <label for="TotalBovespa">Total Bovespa</label>
+                <input type="text" class="form-control" id="TotalBovespa">
+              </div>
+           </div>
+           <div class="col-sm-4">   
+               <P>Corretagem / Despesas</P>  
+                <div class="form-group">
+                  <label for="total">Total</label>
+                  <input type="text" class="form-control" id="Número">
+                </div>
+           </div>  
+          </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success Confirmar" data-dismiss="modal">Confirmar</button>
+            <button type="button" class="btn btn-success">Solicitar Atendimento</button>
+            <button type="button" class="btn btn-light">Editar manualmente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+ <!-- The Modal -->
+<div class="custom-table-section modal fade" id="myModal-new">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <div class="modal-header">
+          <p class="modal-tabs-links">
+            <a href="#" class="active">Detalhamento de transições</a>
+            <a href="#">Histórico de arquivos importados</a>
+          </p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+          <div class="modal-body histoico-sec table-section-modal">
+            <div class="row">
+              <div class="col-md-12">
+                <button class="btn pdf-btn"><i class="far fa-file-pdf"></i> Arquivos PDF</button>
+              </div>
+              <div class="right col-md-12">
+                <table class="table-head">
+                    <thead>
+                      <tr>
+                      <th>
+                        <select class="mdb-select md-form">
+                          <option value="mês">mês</option>
+                        </select>
+                      </th>
+                      <th>Prejuízo a compensar</th>
+                      <th>Total de Vendas</th>
+                      <th>Base de cálculo</th>
+                      <th>IR total</th>
+                      <th>Total DARF</th>
+                      <th>Pagamento</th>
+                      </tr>
+                    </thead>
+                </table>
+                <table class="table">
+                  <thead>
+                    <tr>
+                    <th>Fev. 2021</th>
+                    <th>Valor Total</th>
+                    <th>Valor Total</th>
+                    <th>Valor Total</th>
+                    <th>Valor Total</th>
+                    <th>Valor Total</th>
+                    <th>
+                        <span class="cus-toggle"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success"></span>
+                        </th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    <tr>
+                    <td class="bg-light-green">Operações comuns</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td> <button class="btn table-btn-modal"><i class="far fa-file-pdf"></i> Gerar novo</button></td>
+                    </tr>
+                    <tr>
+                    <td>Daytrade</td>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                    <td><button class="btn table-btn-modal btn-modal"><i class="far fa-file-pdf"></i>comprovante DARF</button></td>
+                    </tr>
+                    <tr>
+                    <td class="bg-light-green">Fundos Imobiliários</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td class="bg-light-green">- - -</td>
+                    <td><span class="modal-btn-text">Clique para inserir seu comprovante</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table">
+                  <thead>
+                      <tr>
+                      <th>Março 2021</th>
+                      <th>Valor Total</th>
+                      <th>Valor Total</th>
+                      <th>Valor Total</th>
+                      <th>Valor Total</th>
+                      <th>Valor Total</th>
+                     <th> <span class="cus-toggle"><input type="checkbox" checked data-toggle="toggle" data-onstyle="success"></span></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="bg-light-green">Operações comuns</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td> <button class="btn table-btn-modal"><i class="far fa-file-pdf"></i> Gerar novo</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Daytrade</td>
+                      <td>- - -</td>
+                      <td>- - -</td>
+                      <td>- - -</td>
+                      <td>- - -</td>
+                      <td>- - -</td>
+                      <td><button class="btn table-btn-modal btn-modal"><i class="far fa-file-pdf"></i>comprovante DARF</button></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-light-green">Fundos Imobiliários</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td class="bg-light-green">- - -</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).on("click",".import-pdf",function(){
+			$("#import-file").trigger("click");
+			//alert($("#import-file").val());
+		});
+		$(document).on("change","#import-file",function(){
+			var file = $(this).val();
+			$('.import-pdf').removeClass('menu-left');
+			$('.import-pdf').addClass('nome-btn');
+			$('.import-pdf').html(file+'<i class="far fa-times-circle cancle"></i>');
+			$('.nome-btn').removeClass('import-pdf');
+			$('.custom-confirme').show();
+			$('.Importar-Arquivo').show();
+		});
+		$(document).on("click",".cancle",function(){
+		    $('#import-file').val('');
+			$('.nome-btn').addClass('menu-left');
+			$('.nome-btn').addClass('import-pdf');
+			$('.import-pdf').removeClass('nome-btn');
+			$('.import-pdf').html('Importar Arquivo');
+
+			$('.custom-confirme').hide();
+			$('.Importar-Arquivo').hide();
+		});
+		$(document).on("click",".Confirmar",function(){
+		    
+			$('.Importar-Arquivo').show();
+			$('.custom-confirme button').html('Dados confirmados <i class="fas fa-check"></i>');
+			$('.custom-confirme p').hide();
+			 $(".Importar-Arquivo").prop('disabled', false);
+			$('.Importar-Arquivo').removeClass('disabled');
+			$('.Importar-Arquivo').addClass('green-bg');
+		});
+	</script>
+</body>
+
+</html>
